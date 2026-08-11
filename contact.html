@@ -29,7 +29,7 @@
                the form is a request only; North Star Bakery will confirm availability,
                pickup details, and final pricing.</p>
 
-            <form action="#" method="post">
+            <form action="#" method="post" id="preorder-form" novalidate>
                 <fieldset>
                     <legend>Customer Information</legend>
 
@@ -38,12 +38,15 @@
                         <input type="text" id="name" name="name"
                                required minlength="2" maxlength="60"
                                autocomplete="name">
+                               <span id="name-error" class="error-message"></span>
+                        
                     </p>
 
                     <p>
                         <label for="email">Email:</label><br>
                         <input type="email" id="email" name="email"
                                required autocomplete="email">
+                               <span id="email-error" class="error-message"></span>
                     </p>
                 </fieldset>
 
@@ -69,6 +72,7 @@
                         <textarea id="item-details" name="item-details" rows="5" cols="50"
                                   required minlength="5"
                                   placeholder="Tell us what you would like to order or ask about."></textarea>
+                                  <span id="item-details-error" class="error-message"></span>
                     </p>
 
                     <p>
@@ -102,5 +106,7 @@
     <footer>
         <p>&copy; 2026 North Star Bakery. Freshly baked for our community.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

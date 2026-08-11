@@ -158,3 +158,17 @@ footer {
         width: 150px;
     }
 }
+
+
+.error-message {
+    display: block;
+    margin-top: 0.25rem;
+    font-weight: bold;
+    color: #8B1E1E;
+}
+
+#favorite-message {
+    margin-top: 1rem;
+    font-weight: bold;
+    color: #6B3E26;
+}

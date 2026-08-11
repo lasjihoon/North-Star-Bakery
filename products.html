@@ -62,10 +62,36 @@
                <a href="contact.html">pre-order request form</a> so we can confirm
                availability, details, and final pricing.</p>
         </section>
+
+<section>
+    <h2>Choose Your Bakery Favorite</h2>
+
+    <p>
+        Select a bakery item you would like to remember for your next visit or pre-order.
+    </p>
+
+    <label for="favorite-item">Favorite item:</label>
+
+    <select id="favorite-item">
+        <option value="">Choose an item</option>
+        <option value="Country Sourdough">Country Sourdough</option>
+        <option value="Whole Grain Hearth Bread">Whole Grain Hearth Bread</option>
+        <option value="Soft Sandwich Loaf">Soft Sandwich Loaf</option>
+        <option value="Weekend Pastry Box">Weekend Pastry Box</option>
+        <option value="Celebration Cake">Celebration Cake</option>
+    </select>
+
+    <button type="button" id="save-favorite">Save My Favorite</button>
+
+    <p id="favorite-message" aria-live="polite"></p>
+</section>
+
     </main>
 
     <footer>
         <p>&copy; 2026 North Star Bakery. Freshly baked for our community.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
